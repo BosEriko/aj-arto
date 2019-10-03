@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css?family=Mansalva|Permanent+Marker&display=swap');
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+.no-extra-space {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: 100vh auto auto;
+}
+
+header {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  background-image: url("data:image/svg+xml,%3Csvg width='64' height='64' viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 16c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zm33.414-6l5.95-5.95L45.95.636 40 6.586 34.05.636 32.636 2.05 38.586 8l-5.95 5.95 1.414 1.414L40 9.414l5.95 5.95 1.414-1.414L41.414 8zM40 48c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zM9.414 40l5.95-5.95-1.414-1.414L8 38.586l-5.95-5.95L.636 34.05 6.586 40l-5.95 5.95 1.414 1.414L8 41.414l5.95 5.95 1.414-1.414L9.414 40z' fill='%23d2d1d2' fill-opacity='0.25' fill-rule='evenodd'/%3E%3C/svg%3E");
+  color: #545454;
+  position: relative;
+}
+
+header section.title {
+  margin-right: 50px;
+}
+
+header section.display-picture {
+  margin-left: 50px;
+}
+
+header section.scroll {
+  position: absolute;
+  bottom: 20px;
+  left: 50vw;
+  margin-left: -50px;
+  width: 100px;
+  text-align: center;
+  animation: bounce 3s infinite;
+}
+
+header section.scroll a {
+  color: #545454;
+  text-decoration: none;
+  font-size: 40px;
+  transition: all .3s ease-in-out;
+}
+
+header section.scroll a:hover {
+  transform: scale(2, 2);
+  font-size: 50px;
+}
+
+@keyframes bounce {
+  0% { transform: translate3d(0,-20px,0) }
+  10% { transform: translate3d(0,0,0) }
+  90% { transform: translate3d(0,0,0) }
+  100% { transform: translate3d(0,-20px,0) }
+}
+
+header h1 {
+  font-size: 100px;
+  font-family: 'Permanent Marker', cursive;
+  text-shadow: 10px 10px 30px rgba(0,0,0,.25);
+}
+
+header p {
+  font-family: 'Mansalva', cursive;
+  font-size: 50px;
+  padding: 0;
+  margin: 30px 0 50px;
+  text-shadow: 10px 10px 30px rgba(0,0,0,.25);
+}
+
+header ul {
+  list-style-type: none;
+  margin: 0 0 0 10px;
+  padding: 0;
+}
+
+header li {
+  display: inline-block;
+  padding: 0 50px 0 0;
+  margin: 0;
+}
+
+header li a {
+  font-family: 'Mansalva', cursive;
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+  text-shadow: 10px 10px 30px rgba(0,0,0,.25);
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  transition: all .3s ease-in-out;
+  padding: 0 10px;
+}
+
+header li a:hover {
+  color: white;
+}
+
+header li a:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  width: 100%;
+  margin-bottom: -10px;
+  background-color: #e9788c;
+  z-index: -1;
+  transition: all .3s ease-in-out;
+}
+
+header li a:hover:before {
+  height: 40px;
+  box-shadow: 10px 10px 30px rgba(0,0,0,.25);
+}
+
+header img {
+  border-radius: 1000px;
+  width: 400px;
+  height: 400px;
+  box-shadow: 10px 10px 30px rgba(0,0,0,.25);
+}

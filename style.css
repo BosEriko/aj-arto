@@ -257,9 +257,9 @@ nav li a:hover {
     flex-direction: row;
   }
 }
-
 /* Nav End */
 
+/* About Start */
 section.about-picture {
   text-align: right;
   margin-right: 50px;
@@ -298,6 +298,7 @@ section.about-text p {
   line-height: 30px;
   text-align: justify;
 }
+/* About Start */
 
 section.gallery {
   grid-column-start: 1;

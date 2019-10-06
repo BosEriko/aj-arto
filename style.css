@@ -331,9 +331,7 @@ section#about .text p {
 
 /* Gallery Start */
 section#gallery {
-  grid-column-start: 1;
-  grid-column-end: 3;
-  margin: 300px 0;
+  padding: 100px 0;
 }
 
 section#gallery h3 {
@@ -344,14 +342,13 @@ section#gallery h3 {
 }
 
 section#gallery .masonry {
-  display: flex;
-  width: 1000px;
+  display: grid;
+  width: 980px;
   max-width: 100%;
   margin: 0 auto;
 }
 
 section#gallery .brick {
-  flex: 1;
   text-align: center;
 }
 
@@ -365,14 +362,28 @@ section#gallery .brick img {
 section#gallery .brick img:hover {
   filter: grayscale(0);
 }
+
+@media (min-width: 768px) {
+  section#gallery .masonry {
+    grid-template-columns: 1fr;
+  }
+}
+@media (min-width: 992px) {
+  section#gallery .masonry {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 1200px) {
+  section#gallery .masonry {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
 /* Gallery End */
 
 /* Footer Start */
 footer {
   padding: 20px;
   text-align: center;
-  grid-column-start: 1;
-  grid-column-end: 3;
   background-color: #e9788c;
   color: #fff;
   margin-top: 200px;

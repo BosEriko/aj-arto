@@ -7,7 +7,11 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
   <body class="no-extra-space">
+    <!-- <HEADER> -->
     <header>
+      <section class="display-picture">
+        <img data-aos="fade-left" data-aos-delay="300" src="./aj.png" alt="Display Picture" />
+      </section>
       <section class="title">
         <h1 class="no-extra-space" data-aos="fade-right">AJ Art</h1>
         <p data-aos="fade-right" data-aos-delay="100">
@@ -25,15 +29,13 @@
           </li>
         </ul>
       </section>
-      <section class="display-picture">
-        <img data-aos="fade-left" data-aos-delay="300" src="./aj.png" alt="Display Picture" />
-      </section>
       <section class="scroll">
         <a href="#nav">
           <i class="fa fa-chevron-down" aria-hidden="true"></i>
         </a>
       </section>
     </header>
+    <!-- </HEADER> -->
     <nav id="nav">
       <ul class="no-extra-space">
         <li>
@@ -68,18 +70,18 @@
         </li>
       </ul>
     </nav>
-    <section class="about-picture" id="about-me">
-      <img data-aos="fade-right" src="./profile-picture.png" alt="Display Picture" />
-    </section>
-    <section class="about-text">
-      <h3 class="no-extra-space" data-aos="fade-left" data-aos-delay="100">AJ Sabandal</h3>
-      <h4 data-aos="fade-left" data-aos-delay="200">
-        Artist by day. Developer by night.
-      </h4>
-      <p class="no-extra-space" data-aos="fade-left" data-aos-delay="300">
-        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-      </p>
-    </section>
+    <!-- <section class="about&#45;picture" id="about&#45;me"> -->
+    <!--   <img data&#45;aos="fade&#45;right" src="./profile&#45;picture.png" alt="Display Picture" /> -->
+    <!-- </section> -->
+    <!-- <section class="about&#45;text"> -->
+    <!--   <h3 class="no&#45;extra&#45;space" data&#45;aos="fade&#45;left" data&#45;aos&#45;delay="100">AJ Sabandal</h3> -->
+    <!--   <h4 data&#45;aos="fade&#45;left" data&#45;aos&#45;delay="200"> -->
+    <!--     Artist by day. Developer by night. -->
+    <!--   </h4> -->
+    <!--   <p class="no&#45;extra&#45;space" data&#45;aos="fade&#45;left" data&#45;aos&#45;delay="300"> -->
+    <!--     It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more&#45;or&#45;less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like). -->
+    <!--   </p> -->
+    <!-- </section> -->
     <section class="gallery" id="gallery">
       <h3>Gallery</h3>
       <div class="masonry">
@@ -110,7 +112,8 @@
     </footer>
     <script>
       AOS.init({
-        duration: 1000
+        duration: 1000,
+        disable: 'phone'
       });
     </script>
   </body>

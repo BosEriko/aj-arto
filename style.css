@@ -212,20 +212,17 @@ header section.display-picture img {
     padding: 0 50px 0 0;
   }
 }
-/* Header Start */
+/* Header End */
 
+/* Nav Start */
 nav {
-  grid-column-start: 1;
-  grid-column-end: 3;
   background-color: #383838;
-  position: sticky;
-  top: 0;
-  z-index: 10000;
 }
 
 nav ul {
   list-style-type: none;
   display: flex;
+  flex-direction: column;
 }
 
 nav li {
@@ -247,6 +244,21 @@ nav li a {
 nav li a:hover {
   background-color: #e9788c;
 }
+
+@media (min-width: 992px) {
+  nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10000;
+  }
+  nav ul {
+    flex-direction: row;
+  }
+}
+
+/* Nav End */
 
 section.about-picture {
   text-align: right;
